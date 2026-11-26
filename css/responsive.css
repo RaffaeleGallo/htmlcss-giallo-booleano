@@ -1,3 +1,17 @@
+/* BONUS LARGE MOBILE: queste regole si applicano da 576px in su. */
+@media screen and (min-width: 576px) {
+  /* I cinque pulsanti condividono lo spazio disponibile. */
+  .social-networks button {
+    flex: 1;
+  }
+
+  /* Il testo scorre a destra dell'immagine e prosegue sotto. */
+  .presentation img {
+    float: left;
+    margin: 0 10px 10px 0;
+  }
+}
+
 /* TABLET: queste regole si applicano da 768px in su. */
 @media screen and (min-width: 768px) {
   /* Logo allineato a sinistra e contenuto più distanziato dai bordi. */
@@ -24,19 +38,8 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  /* I cinque pulsanti condividono lo spazio disponibile. */
-  .social-networks button {
-    flex: 1;
-  }
-
   .ads {
     display: block;
-  }
-
-  /* Il testo scorre a destra dell'immagine e prosegue sotto. */
-  .presentation img {
-    float: left;
-    margin: 0 10px 10px 0;
   }
 }
 
