@@ -1,1 +1,41 @@
-/* Soluzione qui */
+/* TABLET: queste regole si applicano da 768px in su. */
+@media screen and (min-width: 768px) {
+  /* Logo allineato a sinistra e contenuto più distanziato dai bordi. */
+  #topbar {
+    justify-content: flex-start;
+  }
+
+  main {
+    padding: 50px;
+  }
+
+  /* Titolo completo e più grande. */
+  .recipe-origin {
+    display: inline;
+  }
+
+  .recipe-name {
+    font-size: 2rem;
+  }
+
+  /* Informazioni della ricetta distribuite su tre colonne. */
+  .quick-notes ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* I cinque pulsanti condividono lo spazio disponibile. */
+  .social-networks button {
+    flex: 1;
+  }
+
+  .ads {
+    display: block;
+  }
+
+  /* Il testo scorre a destra dell'immagine e prosegue sotto. */
+  .presentation img {
+    float: left;
+    margin: 0 10px 10px 0;
+  }
+}
